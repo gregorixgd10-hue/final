@@ -1,0 +1,88 @@
+
+
+.vermas{
+    text-align: right;
+}
+
+
+.servicio img{
+    width: 100px;
+    height: 100px;
+    
+
+}
+.bajo a{
+text-decoration: none;
+color: green;
+
+}
+
+.pie h2{
+color: white;
+}
+.cabeza a{ 
+    color: black;
+    
+}
+
+.pie Button{
+    outline: none;
+}
+
+
+
+/* Formulario cita */
+.formsec{
+    background-color: #67999087
+}
+#encita{
+     color: #2c3e50;
+    text-align: center
+}
+.Formulario{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    color: #333;
+    width: 80%;
+    align-items: center;
+    align-content: center;
+}
+#formReserva{
+     background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.Formulario button {
+    background-color: #3460db;
+    border-color: #3498db;
+}
+.Formulario a button {
+    background-color: #20a362;
+}
+
+.Formulario button:hover{
+    background-color: #29b937;
+    border-color: #2980b9;
+}
+
+#formReserva label{ font-weight: 600;
+}
+
+#formReserva input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    
+}
+ 
+.alert {
+    padding: 15px;
+    background-color: #2ecc71;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
