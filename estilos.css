@@ -1,5 +1,37 @@
+header a button{
+    position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-20%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.carrusel a button{
+    position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: #27c2b5;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
 
-
+}
+ 
+.carrusel img{ position: relative;
+    
+}
+ 
 .vermas{
     text-align: right;
 }
@@ -85,4 +117,19 @@ color: white;
     margin-bottom: 20px;
     border-radius: 5px;
     text-align: center;
+}
+
+.tablass{     
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.tablass th{
+    text-align: center;
+    background-color: #34495e;
+    color: white;
+}
+.tablass td{
+     text-align: center;
+    vertical-align: middle;
 }

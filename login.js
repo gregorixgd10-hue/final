@@ -8,8 +8,8 @@
     // Mostrar pantalla según sesión activa
     document.addEventListener("DOMContentLoaded", () => {
       const activeUser = JSON.parse(localStorage.getItem("activeUser"));
-      if (activeUser) {
-        showWelcome(activeUser.username);
+      if (user) {
+        showWelcome(user.username);
       }
     });
 
