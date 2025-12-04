@@ -1,5 +1,11 @@
+body{
+    background-color: #F0F8FF;
+}
+
+
+
 header a button{
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 90%;
   transform: translate(-20%, -50%);
@@ -14,7 +20,7 @@ header a button{
 }
 .carrusel a button{
     position: absolute;
-  top: 30%;
+  top: 80%;
   left: 20%;
   transform: translate(-50%, -50%);
   background-color: #27c2b5;
@@ -54,38 +60,41 @@ color: white;
 }
 .cabeza a{ 
     color: black;
+
     
 }
 
-.pie Button{
+.pie a{
     outline: none;
+    border: none;
+    
 }
 
 
 
 /* Formulario cita */
 .formsec{
-    background-color: #67999087
+    background-color: #67999087;
+  
 }
 #encita{
-     color: #2c3e50;
+    color: #2c3e50;
     text-align: center
 }
 .Formulario{
-    padding: 0%;
-    margin: 0%;
+   margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
     color: #333;
-    width: 80%;
+    width: 50%;
     align-items: center;
     align-content: center;
 }
 #formReserva{
-     background-color: #ffffff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    
 }
 .Formulario button {
     background-color: #3460db;
@@ -133,3 +142,29 @@ color: white;
      text-align: center;
     vertical-align: middle;
 }
+
+/* Servicios*/
+.servicio{
+color: black;
+
+
+
+}
+.servicio img{
+
+    margin: 20px auto;
+    padding: 0% ;
+    
+}
+ .card{
+margin: 20px auto;
+padding: 0%;
+}
+ /* Nuestro profesionales*/
+ .profesionales .card{
+height: 50%;
+width: 50%;
+
+
+
+ }

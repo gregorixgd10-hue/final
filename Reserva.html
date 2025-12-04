@@ -6,6 +6,15 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
     <title>citas</title>
+     <script>
+        // Bloquear acceso si no está logueado
+          if (localStorage.getItem("user")) {
+    
+        }
+        else{indow.location.href = "login.html";}
+
+       
+    </script>
 
 </head>
 
@@ -32,6 +41,7 @@
                         <a class="nav-link" href="Contactos.html">Contacto</a>
 
                     </div>
+                    <button onclick="logout()">Cerrar sesión</button>
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -45,7 +55,7 @@
         <!--Formulario de reservacion de citas-->
         <section class="formsec">
             <h1 id="encita">Formulario de Reservación de citas</h1>
-            <div class="Formulario mx-5">
+            <div class="Formulario">
                 
     <form id="formReserva">
         <div class="mb-3">
@@ -137,17 +147,7 @@
         </div>
         </div>
     </footer>
-    <script>
-        // Bloquear acceso si no está logueado
-        if (localStorage.getItem("!user")) {
-            window.location.href = "login.html";
-        }
-
-        function logout() {
-            localStorage.removeItem("user");
-            window.location.href = "login.html";
-        }
-    </script>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

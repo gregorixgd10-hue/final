@@ -1,4 +1,4 @@
- const loginForm = document.getElementById("loginForm");
+const loginForm = document.getElementById("loginForm");
     const registerForm = document.getElementById("registerForm");
     const welcomeScreen = document.getElementById("welcomeScreen");
     const welcomeText = document.getElementById("welcomeText");
@@ -8,8 +8,8 @@
     // Mostrar pantalla según sesión activa
     document.addEventListener("DOMContentLoaded", () => {
       const activeUser = JSON.parse(localStorage.getItem("activeUser"));
-      if (user) {
-        showWelcome(user.username);
+      if (activeUser) {
+        showWelcome(activeUser.username);
       }
     });
 
@@ -42,10 +42,11 @@
     // Cerrar sesión
     function logout() {
       localStorage.removeItem("activeUser");
+          window.location.href = "login.html";
       showLogin();
     }
 
-     // Manejo de registro
+    // Manejo de registro
     registerForm.addEventListener("submit", (e) => {
       e.preventDefault();
 
@@ -98,32 +99,39 @@
       e.preventDefault();
 
       const userInput = document.getElementById("loginUser").value.trim();
-      
       const passInput = document.getElementById("loginPass").value;
-      
 
       let users = JSON.parse(localStorage.getItem("users")) || [];
 
-      const usuarioValido = users.find(function(user){
-        return user.email===userInput || user.username ===userInput && user.password===passInput;
-      }
-        
+      const user = users.find(
+        u => (u.username === userInput || u.email === userInput) && u.password === passInput
       );
 
-
-      if (!usuarioValido) { return alert ("Usuario y/o contraseña incorrectos!")
-        
+      if (user) {
+        loginMsg.textContent = "";
+        localStorage.setItem("activeUser", JSON.stringify(user));
+        showWelcome(user.username);
+      } else {
+        loginMsg.textContent = "Usuario o contraseña incorrectos.";
+        loginMsg.className = "error";
       }
-      else{ 
-        window.location.href="Reserva.html";
-
-      }})
+    });
 
 
-    
+/* Log out
+
+const logout = () => {
+  localStorage.clear();
+  sessionStorage.clear();
+  window.location.href = "Servicios.html"
+}
+
+const logoutbutton = document.querySelector(logout)
+
+logoutbutton.addEventListener("click", logout) */
 
 
 
-   
 
-    
+
+
